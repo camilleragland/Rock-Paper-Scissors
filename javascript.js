@@ -1,15 +1,12 @@
-//This is a rock paper scissors game that is all on console log
-
-//Array 0-2
 const choice = ["Rock", "Paper", "Scissors"];
 const choiceLength = choice.length;
 
-//Picks choice from the array based on input
+
 function getHumanChoice ()
 {
-    //Gets the user input
+    
     let askAnswer = prompt("Rock, Paper, or Scissors?");
-    //Makes answer into lowercase
+    
     let answer = askAnswer.toLowerCase();
     let humanAnswer;
 
@@ -29,10 +26,10 @@ function getHumanChoice ()
     }
     return humanAnswer;
 }
-//Randomly returns rock paper or scissors
+
 function getComputerChoice ()
 {
-    //Gets the choice length and picks a number from 0 to choice length
+
     let random = Math.floor(Math.random()*choiceLength);
     let compAnswer = choice[random];
     return compAnswer;
@@ -42,14 +39,14 @@ function getComputerChoice ()
 function playGame ()
 {
     let round = 1;
-    //Scores
+
     let humanScore = 0;
     let computerScore = 0;
     function playRound( humanChoice, compChoice)
     {
         console.log(" You chose " + humanChoice);
         console.log(" I chose " + compChoice);
-        //Goes through the rock, paper, scissor choices and adds score
+
         if (humanChoice == compChoice)
         {
             console.log("It's a tie!");
@@ -89,7 +86,7 @@ function playGame ()
             console.log("Did you spell your answer correcly? I guess I won't take a point...");
         }
     }
-    //Goes through each round and adds the score until it hits 5
+    
     while (round < 6)
     {
         console.log("Round " + round);
