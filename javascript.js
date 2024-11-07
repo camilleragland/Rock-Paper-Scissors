@@ -83,7 +83,7 @@ function playGame ()
         }
         else if (humanChoice == null)
         {
-            console.log("Did you spell your answer correcly? I guess I won't take a point...");
+            console.log("Did you spell your answer correctly? I guess I won't take a point...");
         }
     }
     
